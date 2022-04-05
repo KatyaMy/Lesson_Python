@@ -13,7 +13,7 @@ class Employee:
             # %d is the format specifier user to print integers or number
 
     def displayEmployee(self):
-        print('Nmae: ', self.name, 'Salary: ', self.salary)
+        print('Name: ', self.name, 'Salary: ', self.salary)
 
 
 emp1 = Employee('Zara', 2000)
