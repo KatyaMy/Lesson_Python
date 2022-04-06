@@ -38,39 +38,35 @@ print(f'NOT Margin')
 
 
 
-
-
-
-
 #II.
-# class Macdonalds:
-#
-#     director = 'Jhon Pit'
-#
-#     def __init__(self, nameEmployee, position, salary):
-#
-#         self.salary = salary
-#         self.nameEmployee = nameEmployee
-#         self.position = position
-#
-#     def printe_Employee(self):
-#         print(f"Director Name is: {Macdonalds.director},\n"
-#               f"Employee name is: {self.nameEmployee},\n"
-#               f"Employee position: {self.position},\n"
-#               f"Employee salary: {self.salary}")
-#
-#
-# class PA_Mac(Macdonalds):
-#     def __init__(self, nameEmployee, position, salary):
-#         super().__init__(nameEmployee, position, salary)
-#
-# class CA_Mac(Macdonalds):
-#     def __init__(self, nameEmployee, position, salary):
-#         super().__init__(nameEmployee, position, salary * 1.2,)
-#
-#
-# employeePA = PA_Mac('Piter', 'Cook', 3800)
-# employeeCA = CA_Mac('Marta', 'Bar', 5000)
-#
-# employeePA.printe_Employee()
-# employeeCA.printe_Employee()
+class Macdonalds:
+
+    director = 'Jhon Pit'
+
+    def __init__(self, nameEmployee, position, salary):
+
+        self.salary = salary
+        self.nameEmployee = nameEmployee
+        self.position = position
+
+    def printe_Employee(self):
+        print(f"Director Name is: {Macdonalds.director},\n"
+              f"Employee name is: {self.nameEmployee},\n"
+              f"Employee position: {self.position},\n"
+              f"Employee salary: {self.salary}")
+
+
+class PA_Mac(Macdonalds):
+    def __init__(self, nameEmployee, position, salary):
+        super().__init__(nameEmployee, position, salary)
+
+class CA_Mac(Macdonalds):
+    def __init__(self, nameEmployee, position, salary):
+        super().__init__(nameEmployee, position, salary * 1.2,)
+
+
+employeePA = PA_Mac('Piter', 'Cook', 3800)
+employeeCA = CA_Mac('Marta', 'Bar', 5000)
+
+employeePA.printe_Employee()
+employeeCA.printe_Employee()
