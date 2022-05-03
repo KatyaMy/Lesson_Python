@@ -16,8 +16,9 @@ class TestMePlease(unittest.TestCase):
         # test
         self.driver.get("https://www.google.com/")
 
-        #self.assertTrue(False
-
+    def test_2(self):
+        # test
+        self.driver.get("https://www.google.com/")
 
     def tearDown(self) -> None:
         # destroy driver instance
